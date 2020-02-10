@@ -1,4 +1,4 @@
-const pool = require ('../db/pg')
+const pool = require ('../../src/db/pg')
 const bcrypt = require ( 'bcrypt' )
 
 
