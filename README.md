@@ -8,7 +8,7 @@ npm install
 ### Compiles for development
 ```
 npm run dev
-
+```
 ### Test
 ```
 npm run test
