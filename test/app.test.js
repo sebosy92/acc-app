@@ -36,6 +36,26 @@ test ('Should create user', async () => {
 
 } )
 
+test ('Should not user', async () => {
+    const response = await request( app )
+    .post ('/users')
+    .send ({
+        email: newUser1.email,
+        surname: newUser1.surname
+    })
+    .expect (500)
+
+    const response2 = await request( app )
+    .post ('/users')
+    .send ({
+        email: 'newmail.pl',
+        surname: newUser1.surname
+    })
+    .expect (500)
+
+} )
+
+
 test ('Should log in user', async () => {
     const response = await request( app )
     .post ('/login')
