@@ -4,7 +4,7 @@ Small app using session for authorization
 ## Project setup
 ```
 npm install
-
+```
 ### Compiles for development
 ```
 npm run dev
